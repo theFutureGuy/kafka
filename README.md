@@ -1,8 +1,4 @@
-Certainly! Below is an updated README.md file with explanations for each section:
-
----
-
-# End-to-End Data Engineering Pipeline with Kafka
+# Kafka Pipelining
 
 Welcome to the End-to-End Data Engineering Pipeline project utilizing Apache Kafka, Apache Airflow, Apache Spark, and Cassandra. This comprehensive guide will walk you through building a robust data pipeline from data ingestion to processing and storage. Everything is containerized using Docker for ease of deployment and scalability.
 
