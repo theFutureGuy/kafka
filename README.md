@@ -1,31 +1,31 @@
-# Realtime Data Streaming | End-to-End Data Engineering Project
+Certainly! Below is an updated README.md file with explanations for each section:
 
-## Table of Contents
-- [Introduction](#introduction)
-- [System Architecture](#system-architecture)
-- [What You'll Learn](#what-youll-learn)
-- [Technologies](#technologies)
-- [Getting Started](#getting-started)
-- [Watch the Video Tutorial](#watch-the-video-tutorial)
+---
 
-## Introduction
+# End-to-End Data Engineering Pipeline with Kafka
 
-This project serves as a comprehensive guide to building an end-to-end data engineering pipeline. It covers each stage from data ingestion to processing and finally to storage, utilizing a robust tech stack that includes Apache Airflow, Python, Apache Kafka, Apache Zookeeper, Apache Spark, and Cassandra. Everything is containerized using Docker for ease of deployment and scalability.
+Welcome to the End-to-End Data Engineering Pipeline project utilizing Apache Kafka, Apache Airflow, Apache Spark, and Cassandra. This comprehensive guide will walk you through building a robust data pipeline from data ingestion to processing and storage. Everything is containerized using Docker for ease of deployment and scalability.
 
-## System Architecture
+## System Design
 
-![System Architecture](https://github.com/airscholar/e2e-data-engineering/blob/main/Data%20engineering%20architecture.png)
+![System Architecture](https://github.com/theFutureGuy/kafka/Data%20engineering%20architecture.png)
 
-The project is designed with the following components:
+**Explanation**: This section provides an overview of the project's architecture, highlighting the key components involved in the data engineering pipeline. The diagram illustrates how data flows through various stages of the pipeline, from ingestion to storage.
 
-- **Data Source**: We use `randomuser.me` API to generate random user data for our pipeline.
-- **Apache Airflow**: Responsible for orchestrating the pipeline and storing fetched data in a PostgreSQL database.
-- **Apache Kafka and Zookeeper**: Used for streaming data from PostgreSQL to the processing engine.
-- **Control Center and Schema Registry**: Helps in monitoring and schema management of our Kafka streams.
-- **Apache Spark**: For data processing with its master and worker nodes.
-- **Cassandra**: Where the processed data will be stored.
+The project architecture consists of the following components:
 
-## What You'll Learn
+- **Data Source**: Utilizes the `randomuser.me` API to generate random user data.
+- **Apache Airflow**: Orchestrates the pipeline and stores fetched data in a PostgreSQL database.
+- **Apache Kafka and Zookeeper**: Facilitates streaming data from PostgreSQL to the processing engine.
+- **Control Center and Schema Registry**: Aids in monitoring and schema management of Kafka streams.
+- **Apache Spark**: Used for data processing with master and worker nodes.
+- **Cassandra**: Stores the processed data.
+
+
+
+**Explanation**: 
+
+By working on this project,
 
 - Setting up a data pipeline with Apache Airflow
 - Real-time data streaming with Apache Kafka
@@ -34,7 +34,11 @@ The project is designed with the following components:
 - Data storage solutions with Cassandra and PostgreSQL
 - Containerizing your entire data engineering setup with Docker
 
-## Technologies
+## Technologies Used
+
+**Explanation**: This section lists the technologies and tools utilized in the project, providing a quick overview of the tech stack.
+
+This project leverages the following technologies:
 
 - Apache Airflow
 - Python
@@ -47,14 +51,18 @@ The project is designed with the following components:
 
 ## Getting Started
 
+**Explanation**: This section provides instructions for getting started with the project, including cloning the repository and running the Docker Compose command to spin up the services.
+
+Follow these steps to get started with the project:
+
 1. Clone the repository:
     ```bash
-    git clone https://github.com/airscholar/e2e-data-engineering.git
+    git clone https://github.com/theFutureGuy/Kafka.git
     ```
 
 2. Navigate to the project directory:
     ```bash
-    cd e2e-data-engineering
+    cd Kafka
     ```
 
 3. Run Docker Compose to spin up the services:
@@ -62,8 +70,14 @@ The project is designed with the following components:
     docker-compose up
     ```
 
-For more detailed instructions, please check out the video tutorial linked below.
+## Contributions
 
-## Watch the Video Tutorial
+**Explanation**: This section encourages contributions to the project and provides guidance on how to do so.
 
-For a complete walkthrough and practical demonstration, check out our [YouTube Video Tutorial](https://www.youtube.com/watch?v=GqAcTrqKcrY).
+Contributions to the project are welcome! If you have any ideas for improvements or feature additions, feel free to open an issue or submit a pull request.
+
+## License
+
+**Explanation**: This section specifies the project's license, providing information on how the project can be used and distributed.
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
